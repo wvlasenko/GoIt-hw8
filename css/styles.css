@@ -53,11 +53,15 @@ img {
 a {
   text-decoration: none;
 }
+button:focus {
+  outline: none;
+}
 
 :root {
   --main-font: "Montserrat", sans-serif;
   --secondary-font: "Roboto", sans-serif;
   --main-color: #ffffff;
+  --secondary-color: #333333;
 }
 /* header decoration */
 .container {
@@ -103,6 +107,7 @@ a {
   font-family: var(--main-font);
   font-size: 14px;
   font-weight: 700;
+  cursor: pointer;
 }
 .header__authorization-list-item-btn:hover {
   border: solid 2px #ffffff;
@@ -141,4 +146,108 @@ a {
   border-style: none;
   background-color: #ff4e50;
   text-align: center;
+  cursor: pointer;
+}
+
+/* partners decoration */
+.partners {
+  padding-top: 70px;
+  padding-bottom: 56px;
+  color: var(--secondary-color);
+}
+
+.partners__title {
+  font-family: var(--main-font);
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.partners__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.partners__list-item {
+  width: 218px;
+  text-align: center;
+}
+
+.partners__list-item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+/* todo */
+/* .partners__list-item-photo {
+  border-radius: 50%;
+  margin: 0 auto;
+} */
+.partners__list-image-vrapper {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+}
+.partners__list-image-vrapper::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 34px;
+  height: 34px;
+  border: solid 4px #ffffff;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+.partners__list-item-photo-tv::after {
+  background-image: url(../img/icons/tv_icon.png);
+  background-color: rgb(255, 78, 80);
+  background-position-y: 4px;
+}
+.partners__list-image-vrapper-test-tube::after {
+  background-image: url(../img/icons/test_tube_icon.png);
+  background-color: #ffa507;
+}
+.partners__list-image-vrapper-cofee::after {
+  background-image: url(../img/icons/coffee.png);
+  background-color: #1cd7ad;
+  background-position-y: 2px;
+}
+.partners__list-image-vrapper-plane::after {
+  background-image: url(../img/icons/paper_plane_icon.png);
+  background-color: #4e73db;
+  background-position-x: 3px;
+}
+
+.partners__list-item-name {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.partners__list-item-description {
+  color: #666666;
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  font-weight: 300;
+}
+.partners__btn-wrapper {
+  text-align: center;
+}
+
+.partners__btn {
+  width: 280px;
+  height: 40px;
+  font-family: var(--main-font);
+  margin: 0 auto;
+  color: #ff4e50;
+  font-size: 14px;
+  font-weight: 700;
+  border: 2px solid #ff4e50;
+  border-radius: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
 }
