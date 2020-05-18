@@ -313,3 +313,21 @@ button:focus {
     width: 194px;
   }
 }
+/* desktop layout */
+@media (min-width: 1200px) {
+  .container {
+    width: 942px;
+  }
+  .header {
+    background-image: url(..//img/header_bgImage_desktop.png);
+  }
+  .header__logo {
+    padding: 0px;
+  }
+  .partners__list {
+    width: 940px;
+  }
+  .partners__list-item:nth-last-child(2n) {
+    margin-bottom: 0px;
+  }
+}
