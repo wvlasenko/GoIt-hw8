@@ -75,8 +75,8 @@ button:focus {
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding-top: 38px;
-  padding-bottom: 138px;
+  padding-top: 14px;
+  padding-bottom: 134px;
   color: var(--main-color);
 }
 .header__logo {
@@ -95,7 +95,7 @@ button:focus {
 .header__authorization-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 124px;
+  margin-bottom: 112px;
 }
 .header__authorization-list-item-btn {
   border: transparent;
@@ -115,7 +115,7 @@ button:focus {
 .header__title-wrapper {
   width: 295px;
   margin: 0 auto;
-  margin-bottom: 18px;
+  margin-bottom: 6px;
 }
 .header__title {
   font-family: var(--main-font);
@@ -167,17 +167,13 @@ button:focus {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 .partners__list-item {
   width: 218px;
   text-align: center;
 }
 
-/* .partners__list-item:not(:last-child)
- {
-  margin-bottom: 28px;
-} */
 .partners__list-item:nth-last-child(even) {
   margin-bottom: 28px;
 }
@@ -187,7 +183,7 @@ button:focus {
 .partners__list-image-vrapper {
   display: inline-block;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .partners__list-image-vrapper::after {
   display: block;
@@ -260,29 +256,33 @@ button:focus {
   .header {
     background-image: url(../img/header_bgImage_tablet.png);
     padding-bottom: 234px;
+    padding-top: 36px;
   }
   .header__logo {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
-    margin-bottom: 138px;
+    padding: 0 40px;
+    margin-bottom: 142px;
   }
   .header__authorization-list {
     margin-bottom: 0;
   }
   .header__title {
-    font-size: 52px;
+    font-size: 50px;
   }
   .header__title-wrapper {
     width: 512px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .header__description-wrapper {
     width: 404px;
-    font-size: 24px;
+    /* font-size: 24px; */
     margin-bottom: 34px;
+  }
+  .header__description {
+    font-size: 24px;
   }
   .header__find-btn {
     width: 226px;
@@ -291,10 +291,10 @@ button:focus {
     margin-bottom: 32px;
   }
   .partners__list {
-    width: 492px;
+    width: 472px;
     justify-content: space-between;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
   .partners__list-item:nth-last-child(2n) {
     margin-bottom: 60px;
