@@ -254,14 +254,14 @@ button:focus {
   .header {
     background-image: url(../img/header_bgImage_tablet.png);
     padding-bottom: 234px;
-    padding-top: 36px;
+    padding-top: 40px;
   }
   .header__logo {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-    margin-bottom: 142px;
+    margin-bottom: 148px;
   }
   .header__authorization-list {
     margin-bottom: 0;
@@ -269,16 +269,20 @@ button:focus {
   .header__title {
     font-size: 50px;
   }
-  .header__title-wrapper {
-    width: 512px;
+
+  .header__content-wrapper {
     margin: 0 auto;
+    width: 512px;
+  }
+  .header__title {
     margin-bottom: 30px;
   }
-  .header__description-wrapper {
-    width: 404px;
-    /* font-size: 24px; */
-    margin-bottom: 34px;
+
+  .header__description {
+    margin-bottom: 32px;
+    padding: 0 30px;
   }
+
   .header__description {
     font-size: 24px;
   }
